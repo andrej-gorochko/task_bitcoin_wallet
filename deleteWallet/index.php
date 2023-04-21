@@ -13,7 +13,7 @@ require_once('../class/BitcoinWallet.php');
 
 // Удаление кошелька
 $wallet->deleteWallet($id);
-echo "Wallet $id deleted\n";
+echo '<div class="d-flex justify-content-center py-3 my-4r">Wallet $id deleted</div>';
 // Закрытие соединения с базой данных
 $pdo = null;
 } else { ?>
