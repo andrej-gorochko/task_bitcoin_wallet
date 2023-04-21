@@ -7,7 +7,7 @@ require_once('../header.php');?>
 <?
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Подключаем необходимые классы и файлы
-    require_once('./class/BitcoinWallet.php');
+    require_once('../class/BitcoinWallet.php');
     $bitcoin_wallet = new BitcoinWallet();
     $wallet = $bitcoin_wallet->registerWallet();
     echo "ID кошелька: {$wallet[0]}<br>";
