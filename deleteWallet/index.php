@@ -7,7 +7,7 @@ require_once('../header.php');?>
 <div class="container"> 
 <? if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Подключаем необходимые классы и файлы
-require_once('./class/BitcoinWallet.php');
+require_once('../class/BitcoinWallet.php');
     $wallet = new BitcoinWallet();
     $id = htmlspecialchars($_POST['wallet_id']);
 
