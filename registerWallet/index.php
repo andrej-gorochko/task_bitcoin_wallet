@@ -10,9 +10,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     require_once('../class/BitcoinWallet.php');
     $bitcoin_wallet = new BitcoinWallet();
     $wallet = $bitcoin_wallet->registerWallet();
-    echo "ID кошелька: {$wallet[0]}<br>";
-    echo "Пароль кошелька: {$wallet[1]}<br>";
-} else { ?>
+      <div class="justify-content-center py-3 my-4"> 
+   <? echo "ID кошелька: {$wallet[0]}<br>";
+    echo "Пароль кошелька: {$wallet[1]}<br>";?>
+      </div>
+<? } else { ?>
     <!-- Форма для добавления кошелька -->
 <form class="d-flex justify-content-center py-3 my-4" method="post" action="">
     <label class="mx-2">Create new wallet:</label>
